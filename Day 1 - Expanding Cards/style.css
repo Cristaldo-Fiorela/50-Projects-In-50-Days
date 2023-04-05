@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
     box-sizing: border-box;
@@ -8,11 +8,74 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Muli', sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     /* overflow: hidden; */
+}
+
+/* PARENT CONTAINER */
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+/* ALL IMAGES */
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+
+/* INDIVIDUAL IMAGES */
+#first-image {
+    background-image: url('https://media.istockphoto.com/id/1034301914/photo/nature-photographer-norway-lofoten-archipelago.jpg?b=1&s=170667a&w=0&k=20&c=jwzlo-cFxJv0xaN-ral78aJRTKrVRxuZ8W8SfwwQC0c=');
+}
+#second-image {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1613140783562-ARLGSYE2Z1NTWD07GOHI/The+Common+Wanderer-9888.jpg');
+}
+#third-image{
+    background-image: url('https://media.istockphoto.com/id/929516304/photo/woman-at-the-beach-photographing-the-sunset.jpg?s=612x612&w=0&k=20&c=DQs4HmVPXBk687AfeEXDMev6h4_XBEm_qR6ymdYNhCc=');
+}
+#fourth-image{
+    background-image: url('https://blog.depositphotos.com/wp-content/uploads/2020/01/Creative-Travel-Photography-With-a-Smartphone-8.jpg.webp');
+}
+#fifth-image{
+    background-image: url('https://e4p7c9i3.stackpathcdn.com/wp-content/uploads/2018/10/0-29.jpg?iv=519');
+}
+
+/* MEDIAQUERIES */
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+
 }
