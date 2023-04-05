@@ -49,23 +49,24 @@ body {
 }
 .panel.active h3{
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 /* INDIVIDUAL IMAGES */
 #first-image {
-    background-image: url('https://media.istockphoto.com/id/1034301914/photo/nature-photographer-norway-lofoten-archipelago.jpg?b=1&s=170667a&w=0&k=20&c=jwzlo-cFxJv0xaN-ral78aJRTKrVRxuZ8W8SfwwQC0c=');
+    background-image: url('https://cdn2.wanderlust.co.uk/media/1029/shutterstock_551961595.jpg?anchor=center&mode=crop&width=1082&height=600&rnd=132084549630000000');
 }
 #second-image {
     background-image: url('https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1613140783562-ARLGSYE2Z1NTWD07GOHI/The+Common+Wanderer-9888.jpg');
 }
 #third-image{
-    background-image: url('https://media.istockphoto.com/id/929516304/photo/woman-at-the-beach-photographing-the-sunset.jpg?s=612x612&w=0&k=20&c=DQs4HmVPXBk687AfeEXDMev6h4_XBEm_qR6ymdYNhCc=');
+    background-image: url('https://shotkit.com/wp-content/uploads/2020/09/beach-photography-featured-1-scaled.jpg');
 }
 #fourth-image{
-    background-image: url('https://blog.depositphotos.com/wp-content/uploads/2020/01/Creative-Travel-Photography-With-a-Smartphone-8.jpg.webp');
+    background-image: url('https://images.unsplash.com/photo-1609264516311-706afaf3d80e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNub3clMjBjaXR5fGVufDB8fDB8fA%3D%3D&w=1000&q=80');
 }
 #fifth-image{
-    background-image: url('https://e4p7c9i3.stackpathcdn.com/wp-content/uploads/2018/10/0-29.jpg?iv=519');
+    background-image: url('https://www.thewanderinglens.com/wp-content/uploads/2016/02/header-1.jpg');
 }
 
 /* MEDIAQUERIES */
