@@ -28,4 +28,6 @@ in this function the parameters entered represent:
 - inMax: maximum scale number
 - outMin: in this case is the min parameter that has the CCS property we want to use, in opacity is 1 in blur is 30
 - outMax: in this case is the max parameter that has the CCS property we want to use, in opacity is 0 in blur is 0
+
+https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 */
