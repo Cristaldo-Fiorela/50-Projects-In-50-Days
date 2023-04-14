@@ -6,6 +6,8 @@
     --right-bg-color: rgba(236, 84, 102, 0.7);
     --left-btn-hover-color: rgba(87,84,236, 1);
     --right-btn-hover-color: rgba(236, 84, 102, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
 }
 
 *{
@@ -96,6 +98,14 @@ h2 {
     background-color: var(--left-bg-color);
 }
 
+.hover-left .left {
+    width: var(--hover-width) ;
+}
+
+.hover-left .right {
+    width: var(--other-width) ;
+}
+
 /* ===RIGHT SPLIT=== */
 
 .split.right {
@@ -111,4 +121,12 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: var(--right-bg-color);
+}
+
+.hover-right .right {
+    width: var(--hover-width) ;
+}
+
+.hover-right .left {
+    width: var(--other-width) ;
 }
