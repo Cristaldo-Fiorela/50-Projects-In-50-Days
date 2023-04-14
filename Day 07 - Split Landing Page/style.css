@@ -8,6 +8,7 @@
     --right-btn-hover-color: rgba(236, 84, 102, 1);
     --hover-width: 75%;
     --other-width: 25%;
+    --speed: 1000ms;
 }
 
 *{
@@ -110,7 +111,7 @@ h2 {
 
 .split.right {
     right: 0;
-    background-image: url('https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_switch_1/H2x1_NintendoSwitch_Hardware_NintendoSwitch_image1280w.jpg');
+    background-image: url('https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/c_scale,w_400/ncom/en_US/switch/site-design-update/oled-model-promo');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -129,4 +130,27 @@ h2 {
 
 .hover-right .left {
     width: var(--other-width) ;
+}
+
+/* ===SPLIT TRANSITION=== */
+
+.split.right, 
+.split.left, 
+.split.right::before,
+.split.left::before {
+    transition: all var(--speed) ease-in-out;
+}
+
+/* ===MEDIAQUERIES=== */
+
+@media(max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1.2;
+        width: 12rem;
+    }
+    
 }
