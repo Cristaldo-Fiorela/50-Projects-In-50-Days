@@ -1,9 +1,8 @@
 // DOM Selectors
+const buttonsDiv = document.querySelector('#buttons');
 
 // Variables
 const sounds = ['aplause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
-
-// Event Listeners
 
 // Functions
 sounds.forEach(sound => {
@@ -12,5 +11,20 @@ sounds.forEach(sound => {
 
     btn.innerText = sound;
 
-    document.querySelector('#buttons').appendChild(btn)
+    // Event Listeners
+    btn.addEventListener('click', () => {
+        stopSongs();
+        document.getElementById(sound).play();
+    })
+
+    buttonsDiv.appendChild(btn)
 })
+
+function stopSongs() {
+    sounds.forEach(sound => {
+        const song = document.getElementById(sound);
+
+        song.pause();
+        song.currentTime = 0;
+    })
+}
