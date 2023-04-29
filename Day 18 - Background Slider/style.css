@@ -78,23 +78,23 @@ body::before {
 }
 
 /* BACKGROUND IMAGES */
-.slide-bg-one {
+.slide.bg-one {
     background-image: url("https://cdn.pixabay.com/photo/2011/12/14/12/11/astronaut-11080_1280.jpg");
 }
 
-.slide-bg-two {
+.slide.bg-two {
     background-image: url("https://cdn.pixabay.com/photo/2016/11/19/20/16/astronaut-1840936_1280.jpg");
 }
 
-.slide-bg-three {
+.slide.bg-three {
     background-image: url("https://cdn.pixabay.com/photo/2012/11/28/12/13/international-space-station-67774_1280.jpg");
 }
 
-.slide-bg-four {
+.slide.bg-four {
     background-image: url("https://cdn.pixabay.com/photo/2010/12/01/space-shuttle-774_1280.jpg");
 }
 
-.slide-bg-five {
+.slide.bg-five {
     background-image: url("https://cdn.pixabay.com/photo/2012/11/28/11/25/satellite-67718_1280.jpg");
 }
 
