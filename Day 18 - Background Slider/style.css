@@ -69,10 +69,12 @@ body::before {
 
 .left-arrow {
     left: calc(15vw - 65px);
+    color: white;
 }
 
 .right-arrow {
     right: calc(15vw - 65px);
+    color: white;
 }
 
 /* BACKGROUND IMAGES */
