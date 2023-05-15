@@ -3,13 +3,12 @@
 // DOM Selector
 const canvas = document.querySelector('#canvas');
 const increseBtn = document.querySelector('#increse');
-console.log(increseBtn)
 const decreseBtn = document.querySelector('#decrese');
 const clearBtn = document.querySelector('#clear');
 const sizeElement = document.querySelector('#size');
 const colorElement = document.querySelector('#color');
 
-// Variales
+// Variables
 const ctx = canvas.getContext('2d');
 let size = 10;
 let mouseIsPressed = false;
