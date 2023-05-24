@@ -18,6 +18,59 @@ body {
     margin: 0 auto;
 }
 
+/* NAVBAR */
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    background-color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current, 
+.nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* HERO */
 .hero {
     background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg');
     background-image: url('https://cdn.pixabay.com/photo/2016/11/20/09/06/laptop-1842297_1280.jpg');
