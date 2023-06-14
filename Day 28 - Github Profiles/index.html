@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Profiles</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Github Profiles</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <form class="user-form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search a Github User"
+                />
+            </form>
 
-    <script src="./main.js"></script>
-</body>
+            <div id="main-content">
+                <div class="card">
+                    <div>
+                        <img
+                            src="https://randomuser.me/api/portraits/women/9.jpg"
+                            alt="avatar user"
+                            class="avatar"
+                        />
+                    </div>
+                    <div class="user-info">
+                        <h2>Donna</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Eveniet, nesciunt!
+                        </p>
+
+                        <ul>
+                            <li>300<strong>Followers</strong></li>
+                            <li>100<strong>Following</strong></li>
+                            <li>30<strong>Repos</strong></li>
+                        </ul>
+
+                        <div id="repos">
+                            <a href="#" class="repos">Repo 1</a>
+                            <a href="#" class="repos">Repo 2</a>
+                            <a href="#" class="repos">Repo 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./main.js"></script>
+    </body>
 </html>
