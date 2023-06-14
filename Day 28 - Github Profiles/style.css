@@ -67,6 +67,9 @@ main {
 .user-info {
     color: #eee;
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .user-info h2 {
