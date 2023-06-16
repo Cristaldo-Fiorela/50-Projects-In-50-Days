@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 *{
     box-sizing: border-box;
@@ -8,11 +8,48 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* overflow: hidden; */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+}
+
+small {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.loveMe {
+    height: 440px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/564x/13/1c/94/131c94f038f7b6c3b5ccff566d2b07c4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.loveMe .fa-heart {
+    position: absolute;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+    to {
+        transform: translate(-50%, -50%) scale(10);
+        opacity: 0;
+    }
 }
