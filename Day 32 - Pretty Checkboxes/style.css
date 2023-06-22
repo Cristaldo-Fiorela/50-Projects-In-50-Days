@@ -60,15 +60,12 @@ body {
     animation: slideOn 0.3s linear forwards;
 }
 
-
-
-
 @keyframes slideOn {
     0% {
         transform:  translateX(0) scale(1);
     }
     50% {
-        transform:  translateX(20px) scale(1.1);
+        transform:  translateX(20px) scale(1.2);
     }
     100% {
         transform:  translateX(40px) scale(1);
