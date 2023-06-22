@@ -14,5 +14,43 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.label {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px 0;
+    background-color: #d0d0d0;
+}
+
+.toggle:checked + .label {
+    background-color: #8e44ad;
+}
+
+.ball {
+    height: 34px;
+    width: 34px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
 }
