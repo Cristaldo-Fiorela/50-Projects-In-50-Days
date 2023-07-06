@@ -60,7 +60,9 @@ body {
     width: 100%;
     padding: 20px;
 }
-
+.main {
+    padding: 20px;
+}
 .hidden {
     display: none;
 }
