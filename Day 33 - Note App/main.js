@@ -20,7 +20,9 @@ function addNewNote( text = '') {
         </button>
     </div>
 
-    <div class="main"></div>
-    <textarea></textarea>
+    <div class="main ${text ? "" : "hidden"}"></div>
+    <textarea class="main ${text ? "hidden" : ""}"></textarea>
     `
+
+    document.body.appendChild(note);
 }
