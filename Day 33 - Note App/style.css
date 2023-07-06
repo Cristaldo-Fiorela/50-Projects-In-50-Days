@@ -8,6 +8,7 @@
 }
 
 body {
+    background-color: #7bdaf3;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
