@@ -38,3 +38,20 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 0.5rem;
+    border: darkslateblue;
+    cursor: pointer;
+    width: 49.5%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:focus {
+    outline: none;
+}
