@@ -34,3 +34,7 @@ img {
     transition: transform 0.5s ease-in-out;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
