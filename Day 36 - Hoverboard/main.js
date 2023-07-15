@@ -28,3 +28,8 @@ function removeColor(element) {
     element.style.background = '#1d1d1d';
     element.style.boxShadow = '0 0 2px #000';
 }
+
+
+function getRandomColor() {
+    return colors[Math.floor(Math.random() * colors.length)];
+}
