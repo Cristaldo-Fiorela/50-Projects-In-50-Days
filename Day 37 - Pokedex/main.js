@@ -35,5 +35,26 @@ const getPokemon = async (id) => {
     const response = await fetch(url);
     const data = await response.json();
 
-    console.log(data)
+    createPokemonCard(data);
 }
+
+const createPokemonCard = (pokemon) => {
+    const pokemonCard = document.createElement('DIV');
+    pokemonCard.classList.add('pokemon');
+
+    const pokemonInnerHTML = `
+    <div class="img-container">
+        <img src="https://w7.pngwing.com/pngs/419/447/png-transparent-bulbasaur-from-pokemon-illustration-pokemon-go-pokemon-yellow-pikachu-ash-ketchum-bulbasaur-pokemon-vertebrate-fictional-character-cartoon.png" alt="bulbasaur">
+    </div>
+    <div class="info">
+        <span class="number">#001</span>
+        <h3 class="name">Bulbasaur</h3>
+        <small class="type">Type: <span>grass</span></small>
+    </div>
+    `;
+
+    pokemonCard.innerHTML = pokemonInnerHTML;
+    poke_container.appendChild(pokemonCard);
+}
+
+fetchPokemons();
