@@ -19,7 +19,7 @@ const colors = {
 	normal: '#F5F5F5'
 }
 
-
+const main_types = Object.keys(colors);
 
 // EVENT LISTENERS
 
@@ -42,14 +42,22 @@ const createPokemonCard = (pokemon) => {
     const pokemonCard = document.createElement('DIV');
     pokemonCard.classList.add('pokemon');
 
+    const pokemon_name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
+    const pokemon_id = pokemon.id.toString().padStart(3, '0');
+    const pokemon_types = pokemon.types.map( type => type.type.name);
+    const type = main_types.find(type => pokemon_types.indexOf(type) > -1);
+    const color = colors[type];
+    pokemonCard.style.backgroundColor = color;
+
+
     const pokemonInnerHTML = `
     <div class="img-container">
-        <img src="https://w7.pngwing.com/pngs/419/447/png-transparent-bulbasaur-from-pokemon-illustration-pokemon-go-pokemon-yellow-pikachu-ash-ketchum-bulbasaur-pokemon-vertebrate-fictional-character-cartoon.png" alt="bulbasaur">
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" alt="bulbasaur">
     </div>
     <div class="info">
-        <span class="number">#001</span>
-        <h3 class="name">Bulbasaur</h3>
-        <small class="type">Type: <span>grass</span></small>
+        <span class="number">#${pokemon_id}</span>
+        <h3 class="name">${pokemon_name}</h3>
+        <small class="type">Type: <span>${type}</span></small>
     </div>
     `;
 
