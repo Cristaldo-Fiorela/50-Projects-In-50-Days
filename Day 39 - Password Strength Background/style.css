@@ -1,6 +1,3 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,5 +11,16 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+.background {
+    background: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
 }
