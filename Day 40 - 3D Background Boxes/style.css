@@ -23,9 +23,10 @@ body {
 .magic {
     cursor: pointer;
     background-color: #f9ca24;
+    border: #f9ca24;
     color: white;
     font-family: 'Poppins', sans-serif;
-    border-radius: 30px;
+    border-radius: 3px;
     font-size: 16px;
     padding: 12px 20px;
     position: fixed;
