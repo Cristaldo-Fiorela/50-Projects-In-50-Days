@@ -5,6 +5,7 @@ const filter = document.getElementById('filter');
 const listItem = []
 
 // EVENT LISTENER
+filter.addEventListener('input', (e) => filterData(e.target.value));
 
 // FUNCTION
 getData();
@@ -12,7 +13,7 @@ getData();
 async function getData() {
     const response = await fetch('https://randomuser.me/api?results=20');
     const { results } = await response.json();
-    console.log(results);
+
     // Clear results
     results.innerHTML = '';
 
@@ -30,4 +31,14 @@ async function getData() {
 
         result.appendChild(li);
     });
+}
+
+function filterData(searchTerm) {
+    listItem.forEach(item => {
+        if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+            item.classList.remove('hide');
+        } else {
+            item.classList.add('hide');
+        }
+    })
 }
